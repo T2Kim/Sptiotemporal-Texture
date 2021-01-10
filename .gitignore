@@ -2,6 +2,11 @@
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudio,visualstudiocode,c++
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudio,visualstudiocode,c++
 
+include/
+bin/
+lib/
+lib_shared/
+
 ### C++ ###
 # Prerequisites
 *.d
