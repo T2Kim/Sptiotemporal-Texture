@@ -30,7 +30,7 @@ lib_shared/
 # Compiled Dynamic libraries
 *.so
 *.dylib
-*.dll
+# *.dll
 
 # Fortran module files
 *.mod
@@ -43,7 +43,7 @@ lib_shared/
 *.lib
 
 # Executables
-*.exe
+# *.exe
 *.out
 *.app
 

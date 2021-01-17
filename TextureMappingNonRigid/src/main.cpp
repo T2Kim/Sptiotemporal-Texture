@@ -50,7 +50,7 @@ int main(int argc, char** argv) {
 	bool genglobalatlas = false;
 
 	if (argc < 2) {
-		TexMap::config.Setconfig("./conf.json", "case_main_test");
+		TexMap::config.Setconfig("./conf.json", "case_hyomin_01");
 	}
 	else {
 		TexMap::config.Setconfig(argv[1], argv[2]);
@@ -97,11 +97,6 @@ int main(int argc, char** argv) {
 			optimizer = new TexMap::Optimizer();
 			optimizer->LoadModel4D(mapper4D, false);
 
-			renderer = new TexMap::Renderer(optimizer);
-			if (renderer->gl_init(&argc, argv) > 0)
-				return -1;
-			renderer->init_resources_UVAtlas(texobjFile);
-			return 0;
 		}
 		else {
 			// generate global atlas
