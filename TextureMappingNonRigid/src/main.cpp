@@ -50,7 +50,7 @@ int main(int argc, char** argv) {
 	bool genglobalatlas = false;
 
 	if (argc < 2) {
-		TexMap::config.Setconfig("./conf.json", "case_hyomin_01");
+		TexMap::config.Setconfig("./conf.json", "case_main_test");
 	}
 	else {
 		TexMap::config.Setconfig(argv[1], argv[2]);
@@ -111,7 +111,7 @@ int main(int argc, char** argv) {
 
 			mapper4D->SetValidFrame(true);
 
-			clock_t start = clock(); // 시간 측정 시작
+			clock_t start = clock();
 
 			optimizer->Model4DLoadandMultiUpdate_key(mapper4D);
 
@@ -122,11 +122,11 @@ int main(int argc, char** argv) {
 			mapper4D->SetValidFrame(false);
 			optimizer->Model4DLoadandMultiRefine_all(mapper4D);
 
-			clock_t end = clock(); // 시간 측정 끝
+			clock_t end = clock(); 
 			double result = (double)(end - start);
-			printf("%f", result); //결과 출력
+			printf("%f", result); 
 
-			// 여기여기 now ori is optimized coordinate not subtracted.
+			// now ori is optimized coordinate not subtracted.
 			mapper4D->ForceSetnow2ori();
 			mapper4D->BackgroundSubtraction(false);
 			optimizer->LoadModel4D(mapper4D, false);
