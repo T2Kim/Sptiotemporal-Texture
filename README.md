@@ -12,21 +12,21 @@ Spatiotemporal Texture Reconstruction
 * MSVC++ >= 14.2
 
 ### Quick Start
-0. Parameterization
+0. Parameterization   
 UVAtlas code: https://github.com/microsoft/UVAtlas
-1. Foreground extraction
+1. Foreground extraction   
 You can find foreground extraction code in https://github.com/csaishih/foreground-extraction
-2. Global texture coordinate optimization
+2. Global texture coordinate optimization   
 Build and execute TextureMappingNonRigid project.
-3. Prepare labeling
+3. Prepare labeling   
 In ./Similarity folder,
 python ./simchek.py
 python ./variance.py
 In SHOT folder,
 python ./shot.py
-4. Labeling
+4. Labeling   
 Re-execute TextureMappingNonRigid project.
-5. Color correction
+5. Color correction   
 We use Texture Stitching program: https://github.com/mkazhdan/TextureSignalProcessing
-6. View result
+6. View result   
 In conf.json file, convert "is_viewer" false to true, and execute.
