@@ -3,7 +3,6 @@ import glfw
 import glm
 
 from GLmesh import *
-from GLpcd import *
 import ShaderLoader
 
 import numpy as np

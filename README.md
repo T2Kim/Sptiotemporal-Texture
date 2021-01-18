@@ -7,7 +7,7 @@ Spatiotemporal Texture Reconstruction
 ![Teaser](teaser.png)
 ### Requirements
 * Windows 10
-* CUDA >= 10.0
+* CUDA >= 10.2
 * python >= 3.6
 * MSVC++ >= 14.2
 * OpenCV >= 3.4

@@ -16,9 +16,7 @@ def run_color_correction(root_dir, tar_idx):
 with open('../TextureMappingNonRigid/conf.json', 'rt', encoding='UTF8') as f:
     conf = json.load(f)
     
-# case_array = ['case_haeun_18_move1', 'case_haeun_18_move2', 'case_hyeonseo_18_kick1', 'case_hyeonseo_18_kick2']
-# case_array = ['case_police']
-case_array = ['case_hyomin_01']
+case_array = ['case_main_test']
 
 
 for case in case_array:

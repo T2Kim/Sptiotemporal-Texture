@@ -3,6 +3,7 @@ import sys
 from glob import glob
 import time
 import subprocess
+import json
 
 def run_extract_undistort(src_dir, FOV):
     proc = subprocess.Popen(['python', 'undistort.py', '--src_dir', src_dir, '--FOV', FOV])
@@ -17,23 +18,15 @@ def run_color_correction(root_dir, atals_dir, tar_idx):
     return proc
                             
 
-# case_arr = [("./200307_hyomin/", "new_all2/")]
-case_arr = [("./210111_hyomin/", "test/")]
-# case_arr = [("./200304_police/", "test/"), ("./200627_shark_tilt/", "ttt/"), ("./200630_mario2/", "ttt1/"), ("./200629_sister3/", "ttt2/"), ("./200307_hyomin/", "swtest/")]
-# case_arr = [("./gunhee/", "new_all/"), ("./200304_police/", "new_all/"), ("./200627_shark_tilt/", "new_all/"), ("./200630_mario2/", "new_all/"), ("./200629_sister3/", "new_all/"), ("./200307_hyomin/", "new_all/")]
-# case_arr = [("./200629_sister3/", "finalfinal/")]
-# case_arr = [("./gunhee/", "global/"), ("./gunhee/", "multi/")]
-# case_arr = [("./gunhee/", "final2/")]
-# case_arr = [("./200627_shark_tilt/", "final/")]
-# case_arr = [("./200307_hyomin/", "finalfinal_pong2_3/")]
-# case_arr = [("./200307_hyomin/", "swtest/"), ("./200307_hyomin/", "swtest_nosw/"), ("./200307_hyomin/", "swtest_notemp/")]
-# case_arr = [("./200307_hyomin/", "swtest/")]
-# case_arr = [("./200630_mario2/", "ttt1/")]
-# case_arr = [("./200618_haeun_move2/", "ttt/")]
+with open('../TextureMappingNonRigid/conf.json', 'rt', encoding='UTF8') as f:
+    conf = json.load(f)
+
+case_arr = [("case_main_test")]
 
 for case in case_arr:
-    root_dir = case[0]
-    atals_dir = case[1]
+    data_case = conf[case]
+    root_dir = data_case['main']['data_root_path']
+    atals_dir = data_case['main']['atlas_path'] + '/'
     file_list = glob(root_dir + "atlas/" + atals_dir + "/video/Frame_*.png")
 
     count = len(file_list)
