@@ -10,6 +10,13 @@ Spatiotemporal Texture Reconstruction
 * CUDA >= 10.0
 * python >= 3.6
 * MSVC++ >= 14.2
+* OpenCV >= 3.4
+* Eigen
+* OpenGL
+* jsoncpp
+* TBB
+* mapmap (https://github.com/dthuerck/mapmap_cpu)   
+Libaries are in zip file. Please extract them before build program.
 
 ### Quick Start
 0. Parameterization   
