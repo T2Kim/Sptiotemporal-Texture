@@ -44,9 +44,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="include\Optimizer.cuh">
-      <Filter>Header Files</Filter>
-    </None>
     <None Include="shaders\atlas.f.glsl">
       <Filter>Shaders</Filter>
     </None>
@@ -80,37 +77,40 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\any.hpp">
+    <ClInclude Include="src\any.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\Mapper4D.h">
+    <ClInclude Include="src\config_utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\Renderer.h">
+    <ClInclude Include="src\curvature.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\shader_utils.h">
+    <ClInclude Include="src\Mapper4D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\Simplifier.h">
+    <ClInclude Include="src\Renderer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\texture.hpp">
+    <ClInclude Include="src\Selector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\TriangleAndVertex.h">
+    <ClInclude Include="src\shader_utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\config_utils.h">
+    <ClInclude Include="src\Simplifier.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\Selector.h">
+    <ClInclude Include="src\texture.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\Calculator.cuh">
+    <ClInclude Include="src\TriangleAndVertex.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\curvature.h">
+    <ClInclude Include="src\Calculator.cuh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Optimizer.cuh">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

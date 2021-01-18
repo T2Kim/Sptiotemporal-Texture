@@ -150,7 +150,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="conf.json" />
-    <None Include="src\Optimizer.cuh" />
     <None Include="shaders\atlas.f.glsl" />
     <None Include="shaders\atlas.v.glsl" />
     <None Include="shaders\atlas_var.f.glsl" />
@@ -164,6 +163,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\any.hpp" />
+    <ClInclude Include="src\Optimizer.cuh" />
     <ClInclude Include="src\Calculator.cuh" />
     <ClInclude Include="src\config_utils.h" />
     <ClInclude Include="src\curvature.h" />
