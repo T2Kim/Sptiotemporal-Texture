@@ -150,7 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="conf.json" />
-    <None Include="include\Optimizer.cuh" />
+    <None Include="src\Optimizer.cuh" />
     <None Include="shaders\atlas.f.glsl" />
     <None Include="shaders\atlas.v.glsl" />
     <None Include="shaders\atlas_var.f.glsl" />
@@ -163,17 +163,17 @@
     <None Include="shaders\sub_atlas.v.glsl" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\any.hpp" />
-    <ClInclude Include="include\Calculator.cuh" />
-    <ClInclude Include="include\config_utils.h" />
-    <ClInclude Include="include\curvature.h" />
-    <ClInclude Include="include\Mapper4D.h" />
-    <ClInclude Include="include\Renderer.h" />
-    <ClInclude Include="include\Selector.h" />
-    <ClInclude Include="include\shader_utils.h" />
-    <ClInclude Include="include\Simplifier.h" />
-    <ClInclude Include="include\texture.hpp" />
-    <ClInclude Include="include\TriangleAndVertex.h" />
+    <ClInclude Include="src\any.hpp" />
+    <ClInclude Include="src\Calculator.cuh" />
+    <ClInclude Include="src\config_utils.h" />
+    <ClInclude Include="src\curvature.h" />
+    <ClInclude Include="src\Mapper4D.h" />
+    <ClInclude Include="src\Renderer.h" />
+    <ClInclude Include="src\Selector.h" />
+    <ClInclude Include="src\shader_utils.h" />
+    <ClInclude Include="src\Simplifier.h" />
+    <ClInclude Include="src\texture.hpp" />
+    <ClInclude Include="src\TriangleAndVertex.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
