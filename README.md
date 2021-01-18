@@ -4,12 +4,12 @@ Spatiotemporal Texture Reconstruction
 ### This repository contains the official implementation of the following paper:
 
 > **Spatiotemporal Texture Reconstruction for Dynamic Objects Usinga Single RGB-D Camera (Eurographics 2021)**
-
+> ![Teaser](./teaser.pdf)
 ### Requirements
-Windows 10
-CUDA >= 10.0
-python >= 3.6
-MSVC++ >= 14.2
+*Windows 10
+*CUDA >= 10.0
+*python >= 3.6
+*MSVC++ >= 14.2
 
 ### Quick Start
 0. Parameterization
